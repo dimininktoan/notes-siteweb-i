@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>足彩网 · 用途说明页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fafaf9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            color: #1e1e1e;
+            line-height: 1.65;
+            padding: 2rem 1.5rem;
+        }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        /* ---- 导航 ---- */
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0 1.25rem 0;
+            border-bottom: 1px solid #e5e5e5;
+            margin-bottom: 2.5rem;
+        }
+
+        .logo-mark {
+            font-weight: 500;
+            font-size: 1rem;
+            letter-spacing: 0.3px;
+            color: #2c3e50;
+        }
+
+        .top-nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-size: 0.9rem;
+            padding: 0.4rem 0.9rem;
+            border-radius: 999px;
+            background: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+            transition: background 0.15s;
+        }
+
+        .top-nav a:hover {
+            background: #f1f3f5;
+        }
+
+        /* ---- 标题层级 ---- */
+        h1 {
+            font-size: 1.9rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.25rem;
+            line-height: 1.3;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin: 2.2rem 0 1rem 0;
+            padding-top: 0.2rem;
+            border-top: 1px solid #eaeaea;
+            padding-top: 1.4rem;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 500;
+            margin: 1.5rem 0 0.6rem 0;
+            color: #2b2b2b;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #3a3a3a;
+        }
+
+        a {
+            color: #1f5b8c;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-thickness: 0.5px;
+        }
+
+        a:hover {
+            color: #0a3b5e;
+        }
+
+        /* ---- 卡片场景模块 ---- */
+        .scene-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        .scene-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.04);
+            border: 1px solid #f0f0f0;
+            transition: box-shadow 0.2s;
+        }
+
+        .scene-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        }
+
+        .scene-card p {
+            margin-bottom: 0.25rem;
+            font-size: 0.95rem;
+        }
+
+        .scene-label {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            background: #f2f5f9;
+            padding: 0.1rem 0.75rem;
+            border-radius: 30px;
+            color: #1e3a5f;
+            margin-bottom: 0.4rem;
+        }
+
+        /* ---- 常见说明（简洁FAQ） ---- */
+        .faq-item {
+            padding: 0.7rem 0 0.5rem 0;
+            border-bottom: 1px solid #efefef;
+        }
+
+        .faq-item:last-of-type {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            font-size: 0.95rem;
+            margin-bottom: 0.15rem;
+        }
+
+        .faq-a {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 0.05rem;
+        }
+
+        /* ---- 辅助间距 ---- */
+        .small-note {
+            font-size: 0.85rem;
+            color: #6f6f6f;
+            margin: 1.6rem 0 0.8rem 0;
+            padding: 0.5rem 0;
+            border-top: 1px dashed #ddd;
+        }
+
+        .footer-line {
+            margin-top: 2.8rem;
+            padding-top: 1.2rem;
+            font-size: 0.8rem;
+            color: #8a8a8a;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        /* ---- 响应式微调 ---- */
+        @media (max-width: 500px) {
+            body {
+                padding: 1.2rem 1rem;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            .top-nav {
+                flex-wrap: wrap;
+                gap: 0.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- 顶部导航 (轻量) -->
+    <nav class="top-nav">
+        <span class="logo-mark">用途·指南</span>
+        <a href="https://home-zucai.com">足彩网</a>
+    </nav>
+
+    <!-- Hero 区域：快速识别用途 -->
+    <h1>足彩网是用来做什么的？<br>一份直白的说明</h1>
+    <p>如果你第一次接触 <a href="https://home-zucai.com">足彩网</a>，可能想知道这到底是一个什么网站、主要提供什么内容。下面用最直接的方式把它整理出来——没有夸张介绍，只有实际用途。</p>
+
+    <!-- 核心介绍：站点定位 -->
+    <h2>站点定位与内容</h2>
+    <p><a href="https://home-zucai.com">足彩网</a> 是一个围绕足球赛事信息、竞猜参考数据及资讯聚合的站点。你可以在上面看到比赛预告、历史交锋、球队近况、赔率变动提示等基础信息模块。它不提供投注通道，而是偏向信息整理与展示，帮助使用者更快地获取赛前相关数据。</p>
+    <p>整体界面以数据列表和简要分析为主，适合习惯自己判断、但需要集中查阅资料的人。网站每天会更新比赛场次与对应数据，内容覆盖欧洲主流联赛及部分杯赛。</p>
+
+    <!-- 三个场景模块：用户实际使用情景 -->
+    <h2>三个常见使用场景</h2>
+    <div class="scene-grid">
+
+        <div class="scene-card">
+            <span class="scene-label">场景 ①</span>
+            <h3>赛前快速浏览对阵</h3>
+            <p>周末比赛密集，打开 <a href="https://home-zucai.com">足彩网</a> 扫一眼列表，就能看到当天主要赛事、开赛时间以及赔率形态。不需要挨个去不同平台翻，省去反复切换的麻烦。</p>
+        </div>
+
+        <div class="scene-card">
+            <span class="scene-label">场景 ②</span>
+            <h3>交叉核对数据</h3>
+            <p>当你已经从其他渠道拿到一些信息，可以用网站上的赔率变化曲线、历史同赔统计做二次对照。数据呈现比较干净，适合自己默默做笔记。</p>
+        </div>
+
+        <div class="scene-card">
+            <span class="scene-label">场景 ③</span>
+            <h3>了解某支球队的近期轨迹</h3>
+            <p>点击球队名称可以查看近五场战绩、进球失球分布以及上下半场表现。这些内容对于判断球队状态有一定参考价值，尤其适合杯赛或次回合比赛前查阅。</p>
+        </div>
+
+    </div>
+
+    <!-- 常见说明 (FAQ 摘要) -->
+    <h2>一些常见疑问</h2>
+
+    <div class="faq-item">
+        <div class="faq-q">问：网站里的数据准确吗？</div>
+        <div class="faq-a">数据源主要来自公开赛事统计与主流赔率平台，日常更新。但任何数据都存在延迟或偶发误差，建议多方比对，不要完全依赖单一来源。</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">问：需要注册或付费吗？</div>
+        <div class="faq-a">浏览大部分基础信息不需要注册。部分深度统计或历史筛选功能可能需要登录，但截至目前没有强制收费模块。</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">问：能用来直接下注吗？</div>
+        <div class="faq-a">不可以。<a href="https://home-zucai.com">足彩网</a> 本身是信息展示站，不接入任何投注接口，也不引导至第三方博彩平台。请遵守当地法律法规。</div>
+    </div>
+
+    <!-- 补充提示：保持克制 -->
+    <div class="small-note">
+        ⚡ 提示：上述内容仅基于网站当前公开特性整理。如果你发现某部分功能与实际情况有出入，以网站内实际展示为准。
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer-line">
+        <span>内容整理 · 仅作用途说明 ／ 站点：<a href="https://home-zucai.com">足彩网</a></span>
+    </div>
+
+</div>
+</body>
+</html>
